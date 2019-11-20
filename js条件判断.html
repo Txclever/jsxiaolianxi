@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // var a = 20;
+    // if(a>=10){
+    //   alert("yes")
+    // }else{
+    //   alert("no");
+    // }
+
+    // var age = 16;
+    // if (age >= 18) {
+    //   alert('yes');
+    // } else {
+    //   console.log('age < 18');
+    //   document.write('age < 18');
+    //   alert('no');
+    // }
+
+    // var age = 20;
+    // if (age >= 16) {
+    //   alert('yes');
+    // } else if (age >= 5) {
+    //   alert('or');
+    // } else {
+    //   alert('no');
+    // }
+
+    var height = parseFloat(prompt('请输入身高(m):'));
+    var weight = parseFloat(prompt('请输入体重(kg):'));
+    var bmi = weight / (height * height);
+    console.log(bmi);
+    if (bmi <= 18.5) {
+      alert("过轻");
+    }else{
+      if(bmi>18.5 && bmi <= 25){
+        alert("正常");
+      }else{
+        if(bmi>25 && bmi <= 28){
+          alert("过重");
+        }else{
+          if(bmi > 28 && bmi <= 32){
+            alert("肥胖");
+          }else{
+            if(bmi > 32){
+              alert("严重肥胖");
+            }
+          }
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>

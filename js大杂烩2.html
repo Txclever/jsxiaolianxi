@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      table {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      td {
+        height: 20px;
+        border: 2px solid #906;
+        padding-left: 20px;
+      }
+  </style>
+</head>
+
+<body>
+  <!-- <title>99</title> -->
+  <script>
+    document.write('<table>')
+    for (var i = 1; i <= 9; i++) {
+      document.write('<tr>')
+      for (var l = 1; l <= i; l++) {
+        document.write('<td>');
+        document.write(l + '*' + i + '=' + i * l)
+        // document.write('</td>');
+      }
+      // document.write('</tr>');
+    }
+    // document.write('</table>');
+  </script>
+</body>
+
+</html>
